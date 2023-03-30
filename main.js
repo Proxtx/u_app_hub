@@ -63,7 +63,6 @@ export class App {
   }
 
   async changeScene(client, scene) {
-    this.sleeping[client] = !this.sleeping[client];
     await this.client.request("http", "request", [
       "POST",
       this.config.url,
@@ -77,7 +76,6 @@ export class App {
   }
 
   async changeSceneJSON(client, scene) {
-    this.sleeping[client] = !this.sleeping[client];
     await this.client.request("http", "request", [
       "POST",
       this.config.url,
