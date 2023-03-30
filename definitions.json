@@ -1,0 +1,36 @@
+{
+  "methods": {
+    "changeScene": {
+      "name": "Scene",
+      "arguments": [
+        { "type": "select", "options": [], "name": "Device" },
+        {
+          "type": "text",
+          "placeholder": "Name",
+          "value": "Time",
+          "name": "Scene Name"
+        }
+      ]
+    },
+    "sleep": {
+      "name": "Sleep",
+      "arguments": [{ "type": "select", "options": [], "name": "Device" }]
+    },
+    "wakeUp": {
+      "name": "Wake Up",
+      "arguments": [{ "type": "select", "options": [], "name": "Device" }]
+    },
+    "changeSceneJSON": {
+      "name": "Scene JSON",
+      "arguments": [
+        { "type": "select", "options": [], "name": "Device" },
+        {
+          "name": "JSON",
+          "type": "text",
+          "placeholder": "JSON",
+          "value": "\"{\"app\": \"hub_text\", \"title\":\"Notification\", \"text\":\"Text\"}\""
+        }
+      ]
+    }
+  }
+}
