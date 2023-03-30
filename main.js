@@ -31,8 +31,6 @@ export class App {
       return delete this.client;
     }
 
-    if (!clients) return delete this.client;
-
     for (let method in this.definitions.methods) {
       this.definitions.methods[method].arguments[0].options = clients;
     }
