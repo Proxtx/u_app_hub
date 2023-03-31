@@ -102,7 +102,7 @@ export class App {
           "application/json",
         ])
       ).result.response
-    );
+    ).data;
   }
 
   async findClient() {
