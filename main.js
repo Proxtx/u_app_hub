@@ -88,6 +88,19 @@ export class App {
     ]);
   }
 
+  async info(client) {
+    return await this.client.request("http", "request", [
+      "POST",
+      this.config.url,
+      JSON.stringify({
+        arguments: [this.config.pwd, client],
+        export: "info",
+        module: "public/devices.js",
+      }),
+      "application/json",
+    ]);
+  }
+
   async findClient() {
     await refreshClients();
     if (clients[this.config.client]) this.client = clients[this.config.client];

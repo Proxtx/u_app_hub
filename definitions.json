@@ -31,6 +31,10 @@
           "value": "\"{\"app\": \"hub_text\", \"title\":\"Notification\", \"text\":\"Text\"}\""
         }
       ]
+    },
+    "info": {
+      "name": "Device Info",
+      "arguments": [{ "type": "select", "options": [], "name": "Device" }]
     }
   }
 }
